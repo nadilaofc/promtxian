@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIAN PROMPT AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="background"></div>
+
+<header>
+    <h1>XIAN PROMPT AI</h1>
+    <p>Generate Prompt & Edit Image menggunakan AI</p>
+</header>
+
+<div class="container">
+
+    <div class="upload-box">
+
+        <h2>
+            <i class="fa-solid fa-image"></i>
+            Upload Gambar
+        </h2>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <img id="preview">
+
+    </div>
+
+    <div class="menu">
+
+        <button class="card" id="promptBtn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Buat Prompt dari Foto</span>
+        </button>
+
+        <button class="card" id="editBtn">
+            <i class="fa-solid fa-palette"></i>
+            <span>Edit Foto dengan Prompt</span>
+        </button>
+
+    </div>
+
+    <div id="promptArea" class="hidden">
+
+        <h3>Masukkan Prompt</h3>
+
+        <textarea id="prompt"
+        placeholder="Contoh: Ultra realistic, cinematic lighting, DSLR, 8K"></textarea>
+
+    </div>
+
+    <button id="runAI">
+        Jalankan AI
+    </button>
+
+    <div class="loading hidden" id="loading">
+
+        <div class="loader"></div>
+
+        <p>AI sedang bekerja...</p>
+
+    </div>
+
+    <div class="result">
+
+        <h2>HASIL AI</h2>
+
+        <textarea id="resultText"
+        placeholder="Prompt AI akan muncul di sini..." readonly></textarea>
+
+        <img id="resultImage">
+
+    </div>
+
+</div>
+
+<a
+href="https://wa.me/6289697235719"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

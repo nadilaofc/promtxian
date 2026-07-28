@@ -1,0 +1,14 @@
+{
+  "name": "xian-prompt-ai",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.0",
+    "openai": "^5.0.0"
+  }
+}
